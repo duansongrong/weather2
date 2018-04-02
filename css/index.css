@@ -110,11 +110,23 @@ body{
 	align-content: space-around;
 	flex-shrink: 0;
 }
-.hours_img,.weeks_img{
+.hours_img{
 	width: 1rem;
 	height: 1rem;
 	padding:0  0.4rem;
 	box-sizing: content-box;
+}
+.weeks_img{
+	width: 1rem;
+	height: 2.1rem;
+	padding:0  0.4rem;
+	box-sizing: content-box;
+}
+.weeks_img img{
+	width: 1rem;
+	height: 1rem;
+	display: block;
+	margin-bottom: 0.05rem;
 }
 .hours_time, .hours_temp, .weeks_date, .weeks_weather, .weeks_max, .weeks_min,.weeks_fengxiang, .weeks_fengji{
 	font-size: 0.26rem;
@@ -130,7 +142,7 @@ body{
 	overflow-x:scroll ; 
 }
 #weeks li{
-	width: 2rem;
+	width: 2.5rem;
 	height: 11.19rem;
 	padding: 0.7rem 0;
 	display: flex;
@@ -149,14 +161,16 @@ body{
 }
 #citys{
 	width: 100vw;
-	height:100vh;
+	height:auto;
 	background-color: #F6F6F6;
 	left: 0;
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	z-index: 999; 
+	z-index: 999;
 	position: fixed;
+	display: none;
+	padding:0.35rem 0.3rem 0 0.3rem;
 	/* position: absolute;
 	left: 0;
 	right: 0;
@@ -194,13 +208,17 @@ header{
 	border: 0;
 }
 .remen_city_top{
-	width: 100vw;
+	width: 50%;
 	height: 0.7rem;
+	padding: 0 0.29rem 0 0.29rem;
+	margin-bottom: 0.5rem;
+	float: left;
 }
 .renmen_wenzi{
 	font-size: 0.45rem;
 	color: #999999;
 	line-height: 0.7rem;
+
 }
 .remen_city_bottom{
 	width: 100vw;
@@ -216,12 +234,9 @@ header{
 	border: 0.03rem solid #E0E0E0;
 	text-align: center;
 	line-height: 0.84rem;
-	margin: 0 0.39rem 0.39rem 0;
+	/*margin: 0 0.39rem 0.39rem 0;*/
+	margin: 0.25rem 0.39rem 0.39rem 0.2rem;
 	justify-content: space-around;
 	align-content: space-around;
-}
-#citys:hover{
-	z-index: -1;
-	transition: 0.5s linear,opacity 1s linear;
-	opacity: 0;
+	float: left;
 }
