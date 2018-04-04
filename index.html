@@ -269,7 +269,7 @@ $.getScript("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",funct
 });
 function getWeather(city){
 $.ajax({
-    url:"http://api.jisuapi.com/weather/query?appkey=6e1dc983dbe0288e&city="+city,
+    url:"https://api.jisuapi.com/weather/query?appkey=6e1dc983dbe0288e&city="+city,
     dataType:"jsonp",
     success:function(r){
         let data=r.result.daily;
@@ -340,7 +340,7 @@ var data=[]; //存放所有的数据
 var province=[]; //存放所有省的数据
 var city=[];    //存放某个省的所有市
 $.ajax({
-    url:"http://api.jisuapi.com/weather/city?appkey=6e1dc983dbe0288e",
+    url:"https://api.jisuapi.com/weather/city?appkey=6e1dc983dbe0288e",
     dataType:"jsonp",
     success:function(r){
         data=r.result;
